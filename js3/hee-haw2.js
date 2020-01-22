@@ -4,7 +4,16 @@ const SECOND_WORD = "Haw";
 document.getElementById('btn-print').addEventListener('click', heeHaw);
 
 function heeHaw() {
-    let qty = document.getElementById('hee-haw-qty').value;
+    refresh();
+
+    let qty = document.getElementById('qty').value.trim();
+
+    // If not all digits show error
+    if (!/^\d+$/.test(qty)) {
+        showError();
+        return;
+    }
+
     let outputBox = document.getElementById('output');
 
     function processHeeHaw(currNum, qty) {
@@ -28,6 +37,18 @@ function heeHaw() {
         }
     }
     processHeeHaw(1, qty);
+}
+
+function refresh() {
+    // Clear error
+    document.getElementById('err-qty').style.display = 'none';
+
+    //Clear output
+    document.getElementById('output').innerHTML = "";
+}
+
+function showError() {
+    document.getElementById('err-qty').style.display = 'initial';
 }
 
 function printText(output, outputBox) {

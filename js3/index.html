@@ -3,19 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <title>Hee Haw!</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <h1>Hee Haw!</h1>
 
-    <label for="hee-haw-qty">Please type a whole number: </label>
-    <input id="hee-haw-qty" type="text">
-    <span>Must type a whole number</span>
+    <label for="qty">Please type a whole number: </label>
+    <input id="qty" type="text">
+    <span id="err-qty" class="error">Must type a whole number</span>
+
     <button id="btn-print">Print</button>
 
     <p>Hee Haw Output</p>
-    <div id="output">
+    <div id="output"></div>
 
-    </div>
     <script src="hee-haw2.js"></script>
 </body>
 </html>

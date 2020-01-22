@@ -1,0 +1,9 @@
+.error {
+    display: none;
+    color: orangered;
+}
+
+#output p {
+    margin: 2px 0;
+}
+
