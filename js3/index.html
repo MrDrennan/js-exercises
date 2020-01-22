@@ -6,16 +6,19 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Hee Haw!</h1>
+    <header>
+        <h1>Hee Haw!</h1>
+    </header>
+    <main>
+        <label for="qty">Please type a whole number: </label>
+        <input id="qty" type="text">
+        <span id="err-qty" class="error">Must type a whole number</span>
 
-    <label for="qty">Please type a whole number: </label>
-    <input id="qty" type="text">
-    <span id="err-qty" class="error">Must type a whole number</span>
+        <button id="btn-print">Print</button>
 
-    <button id="btn-print">Print</button>
-
-    <p>Hee Haw Output</p>
-    <div id="output"></div>
+        <p>Hee Haw Output</p>
+        <div id="output"></div>
+    </main>
 
     <script src="hee-haw2.js"></script>
 </body>

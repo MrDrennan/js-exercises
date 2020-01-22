@@ -8,7 +8,7 @@ function heeHaw() {
 
     let qty = document.getElementById('qty').value.trim();
 
-    // If not all digits show error
+    // If not all digits then show error
     if (!/^\d+$/.test(qty)) {
         showError();
         return;
